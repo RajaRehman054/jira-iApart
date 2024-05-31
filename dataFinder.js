@@ -77,10 +77,6 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 	var data = [];
 
 	issueHistory.forEach(entry => {
-		// if (issueKey === 'IAPTS-14762') {
-		// 	console.log(entry);
-		// }
-
 		for (const item of entry.items) {
 			if (item.field === 'Developer') {
 				mainData['Developer'] = item.toString;
@@ -112,6 +108,12 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 					dated: entry.created,
 					item: obj,
 				});
+				if (item.toString === 'QA Rejected') {
+					mainData['QA_KB'] += 1;
+				}
+				if (item.toString === 'UAT Rejected') {
+					mainData['UAT_KB'] += 1;
+				}
 			}
 		}
 	});
@@ -143,9 +145,6 @@ const isWeekend = date => {
 };
 
 const calculateDaysInStates = (data, issueKey) => {
-	if (issueKey === 'IAPTS-15584') {
-		console.log(data);
-	}
 	const dateStates = {};
 	const stateDays = { 'In Progress': 0, QA: 0, UAT: 0 };
 
