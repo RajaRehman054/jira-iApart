@@ -57,8 +57,7 @@ const mainFunc = async () => {
 				}
 				if (data[index].status === 'done') {
 					qaEng[qa].number += 1;
-					qaEng[qa].totalTime +=
-						(data[index]['QA'] || 0) + (data[index]['QA'] || 0);
+					qaEng[qa].totalTime += data[index]['QA'] || 0;
 				}
 			}
 
@@ -98,8 +97,6 @@ const mainFunc = async () => {
 			sprintCompletedPoints: totalPoints - notCompletedPoints,
 			sprintnotCompletedPoints: notCompletedPoints,
 		};
-
-		// console.log('Final Data: ', finalData);
 
 		let avgDevTimeByEachDev = averageTimeCal(developers, true);
 		let avgQaTimeByEachQa = averageTimeCal(qaEng, false);
