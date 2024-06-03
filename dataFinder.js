@@ -99,10 +99,10 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 			if (item.field === 'status') {
 				let obj = item;
 				if (item.toString === 'QA Ready') {
-					obj = { ...item, toString: 'In Progress' };
+					obj = { ...item, toString: 'QA' };
 				}
 				if (item.fromString === 'QA Ready') {
-					obj = { ...item, fromString: 'In Progress' };
+					obj = { ...item, fromString: 'QA' };
 				}
 				data.push({
 					dated: entry.created,
