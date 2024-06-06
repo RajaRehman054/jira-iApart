@@ -105,7 +105,7 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 				mainData.sprintChanges = `${mainData.sprintChanges} ${item.toString}`;
 			}
 			if (item.field === 'status') {
-				// if (issueKey === 'IAPTS-15601') {
+				// if (issueKey === 'IAPTS-13471') {
 				// 	console.log(entry.created, item);
 				// }
 				mainData.lastState = item.toString;
