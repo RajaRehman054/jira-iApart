@@ -53,11 +53,12 @@ const mainFunc = async () => {
 			}
 			if (qa) {
 				if (!qaEng.hasOwnProperty(qa)) {
-					qaEng[qa] = { totalTime: 0, number: 0 };
+					qaEng[qa] = { totalTime: 0, number: 0, qaKB: 0 };
 				}
 				if (data[index].status === 'done') {
 					qaEng[qa].number += 1;
 					qaEng[qa].totalTime += data[index]['QA'] || 0;
+					qaEng[qa].qaKB += data[index].QA_KB;
 				}
 			}
 
@@ -96,6 +97,9 @@ const mainFunc = async () => {
 			sprintCommitedPoints: totalPoints,
 			sprintCompletedPoints: totalPoints - notCompletedPoints,
 			sprintnotCompletedPoints: notCompletedPoints,
+			sprintnotCompletedPointsPercentage: Math.round(
+				(notCompletedPoints / totalPoints) * 100
+			),
 		};
 
 		let avgDevTimeByEachDev = averageTimeCal(developers, true);
@@ -129,7 +133,13 @@ const averageTimeCal = (data, signal) => {
 			object.uatKB = person.uatKB;
 			avgTimeSpent[name] = object;
 		} else {
-			avgTimeSpent[name] = parseFloat((totalTime / number).toFixed(3));
+			let object = { avgTime: 0, qaKB: 0, uatKB: 0 };
+			object.avgTime = parseFloat((totalTime / number).toFixed(3));
+			if (!object.avgTime) {
+				object.avgTime = 0;
+			}
+			object.qaKB = person.qaKB;
+			avgTimeSpent[name] = object;
 		}
 	});
 	return avgTimeSpent;

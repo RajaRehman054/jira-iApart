@@ -146,6 +146,7 @@ const createCSV = async (data, mainDetails, developers, qa) => {
 			'UAT',
 			'UAT_KB',
 			'sprintChanges',
+			'lastState',
 		];
 
 		sheet.addRow(desiredHeaderOrder);
@@ -183,9 +184,9 @@ const createCSV = async (data, mainDetails, developers, qa) => {
 		});
 		sheet.addRow([]);
 
-		sheet.addRow(['Qa Engineer', 'Avg Time']);
+		sheet.addRow(['Qa Engineer', 'Avg Time', 'QA_KB']);
 		Object.keys(qa).forEach(key => {
-			sheet.addRow([key, qa[key]]);
+			sheet.addRow([key, qa[key].avgTime, qa[key].qaKB]);
 		});
 
 		await workbook.csv.writeFile(`output/${project}.csv`);

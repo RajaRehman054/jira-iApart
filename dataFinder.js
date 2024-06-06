@@ -73,7 +73,13 @@ const dataFinder = async () => {
 
 // !Function to calculate the time spent in a particular status
 const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
-	let mainData = { QA_KB: 0, UAT_KB: 0, status: 'done', sprintChanges: '' };
+	let mainData = {
+		QA_KB: 0,
+		UAT_KB: 0,
+		status: 'done',
+		sprintChanges: '',
+		lastState: '',
+	};
 	var data = [];
 
 	issueHistory.forEach(entry => {
@@ -88,15 +94,21 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 				mainData['QA Engineer'] = item.toString;
 			}
 			if (item.field === 'Sprint') {
-				if (item.fromString === `${key}`) {
-					mainData.status = 'not-done';
-				}
-				if (item.toString === `${key}`) {
+				const items = item.toString.split(',').map(item => item.trim());
+				const lastItem = items[items.length - 1];
+				const isEqual = lastItem === key;
+				if (isEqual) {
 					mainData.status = 'done';
+				} else {
+					mainData.status = 'not-done';
 				}
 				mainData.sprintChanges = `${mainData.sprintChanges} ${item.toString}`;
 			}
 			if (item.field === 'status') {
+				// if (issueKey === 'IAPTS-15601') {
+				// 	console.log(entry.created, item);
+				// }
+				mainData.lastState = item.toString;
 				let obj = item;
 				if (item.toString === 'QA Ready') {
 					obj = { ...item, toString: 'QA' };
