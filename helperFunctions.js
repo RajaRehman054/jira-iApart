@@ -151,19 +151,21 @@ const createCSV = async (data, mainDetails, developers, qa) => {
 
 		sheet.addRow(desiredHeaderOrder);
 		data.forEach(rowData => {
-			const row = [];
-			desiredHeaderOrder.forEach(key => {
-				if (key === 'sprintChanges') {
-					let str = '';
-					if (rowData[key]) {
-						str = includeOnlyOnce(rowData[key]);
+			if (rowData.lastState !== 'Obsolete') {
+				const row = [];
+				desiredHeaderOrder.forEach(key => {
+					if (key === 'sprintChanges') {
+						let str = '';
+						if (rowData[key]) {
+							str = includeOnlyOnce(rowData[key]);
+						}
+						row.push(str);
+					} else {
+						row.push(rowData[key] || '');
 					}
-					row.push(str);
-				} else {
-					row.push(rowData[key] || '');
-				}
-			});
-			sheet.addRow(row);
+				});
+				sheet.addRow(row);
+			}
 		});
 		sheet.addRow([]);
 

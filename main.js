@@ -22,6 +22,9 @@ const mainFunc = async () => {
 		let bugs = 0;
 
 		for (let index = 0; index < data.length; index++) {
+			if (data[index].lastState === 'Obsolete') {
+				continue;
+			}
 			let dev = data[index]['Developer'];
 			let qa = data[index]['QA Engineer'];
 
