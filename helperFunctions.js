@@ -145,6 +145,7 @@ const createCSV = async (data, mainDetails, developers, qa) => {
 			'QA_KB',
 			'UAT',
 			'UAT_KB',
+			'testCases',
 			'sprintChanges',
 			'lastState',
 		];

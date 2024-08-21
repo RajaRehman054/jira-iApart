@@ -36,7 +36,6 @@ const dataFinder = async () => {
 									const issueKey = issue.key;
 									const issueHistory =
 										await fetchIssueHistory(issueKey);
-
 									const timeInProgress =
 										await calculateTimeSpentInStatus(
 											issueHistory.reverse(),
@@ -79,6 +78,7 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 		status: 'done',
 		sprintChanges: '',
 		lastState: '',
+		testCases: 0,
 	};
 	var data = [];
 
@@ -125,6 +125,20 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 				}
 				if (item.toString === 'UAT Rejected') {
 					mainData['UAT_KB'] += 1;
+				}
+			}
+			if (item.field === 'Link') {
+				let toString = item.toString;
+				if (toString && toString.includes(' by ')) {
+					if (issueKey === 'IAPTS-16158') {
+						console.log(entry.created, item);
+					}
+					const parts = toString.split(' by ');
+					const before = parts[0].trim();
+					const after = parts[1] ? parts[1].trim() : '';
+					if (before === 'This issue is tested') {
+						mainData.testCases += 1;
+					}
 				}
 			}
 		}
