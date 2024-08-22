@@ -73,6 +73,7 @@ sprintCommitedPoints,108.5
 sprintCompletedPoints,96
 sprintnotCompletedPoints,12.5
 sprintnotCompletedPointsPercentage,12
+totalTestCases,71
 
 Developers,Avg Time,QA_KB,UAT_KB
 Muhammad Harris Bin Fazal,4.75,1,0

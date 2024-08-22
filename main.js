@@ -20,6 +20,7 @@ const mainFunc = async () => {
 		let notCompletedPoints = 0;
 		let storyPoints = 0;
 		let bugs = 0;
+		let totalTestCases = 0;
 
 		for (let index = 0; index < data.length; index++) {
 			if (data[index].lastState === 'Obsolete') {
@@ -27,6 +28,7 @@ const mainFunc = async () => {
 			}
 			let dev = data[index]['Developer'];
 			let qa = data[index]['QA Engineer'];
+			totalTestCases += data[index].testCases;
 
 			if (data[index].issue_type === 'Story') {
 				storyPoints += 1;
@@ -103,6 +105,7 @@ const mainFunc = async () => {
 			sprintnotCompletedPointsPercentage: Math.round(
 				(notCompletedPoints / totalPoints) * 100
 			),
+			totalTestCases,
 		};
 
 		let avgDevTimeByEachDev = averageTimeCal(developers, true);
