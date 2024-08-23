@@ -21,6 +21,7 @@ const mainFunc = async () => {
 		let storyPoints = 0;
 		let bugs = 0;
 		let totalTestCases = 0;
+		let pbiWithoutTestCases = 0;
 
 		for (let index = 0; index < data.length; index++) {
 			if (data[index].lastState === 'Obsolete') {
@@ -28,6 +29,9 @@ const mainFunc = async () => {
 			}
 			let dev = data[index]['Developer'];
 			let qa = data[index]['QA Engineer'];
+			if (data[index].testCases === 0) {
+				pbiWithoutTestCases += 1;
+			}
 			totalTestCases += data[index].testCases;
 
 			if (data[index].issue_type === 'Story') {
@@ -106,6 +110,11 @@ const mainFunc = async () => {
 				(notCompletedPoints / totalPoints) * 100
 			),
 			totalTestCases,
+			avgTestCasesPerPbi: parseFloat(
+				(totalTestCases / data.length).toFixed(2)
+			),
+			pbiWithTestCases:
+				((data.length - pbiWithoutTestCases) / data.length) * 100,
 		};
 
 		let avgDevTimeByEachDev = averageTimeCal(developers, true);

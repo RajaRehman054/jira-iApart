@@ -31,7 +31,7 @@ iApts 2024-16,IAPTS-15623,Bug,1,done,Iqra Haq,Irfan Fazal,Khurram Shahzad Janjua
 iApts 2024-16,IAPTS-14206,Story,2,not-done,Taimoor Ali,Abdul Wahab,Haseeb Ur Rehman,17.8,4.8,2,0.3,2,1,2024-09 2024-10 2024-11 2024-14 2024-15 2024-16 2024-17 iApts,QA Ready
 iApts 2024-16,IAPTS-15611,Bug,0.5,not-done,Iqra Haq,Abdul Wahab,Iqra Haq,5.5,1,,0.5,,1,2024-16 2024-17 iApts,Done
 iApts 2024-16,IAPTS-15702,Bug,0.5,done,Iqra Haq,Abdullah Adil,Khurram Shahzad Janjua,3.5,1,,2.5,,1,2024-16 iApts,On Production
-iApts 2024-16,IAPTS-14196,Story,3,not-done,andreanygren,Maria,,12.5,0.5,,,,,2024-15 2024-16 2024-17 iApts,QA Ready
+iApts 2024-16,IAPTS-14196,Story,3,not-done,andreanygren,Maria,Haseeb Ur Rehman,12.5,2.5,,,,,2024-15 2024-16 2024-17 iApts,QA
 iApts 2024-16,IAPTS-16142,Story,0.5,done,andreanygren,Inam,Khurram Shahzad Janjua,3.8,1.8,1,1.3,,2,2024-15 2024-16 iApts,Done
 iApts 2024-16,IAPTS-14680,Story,1,done,Jason Pecoraro,Abdul Ahad,Haseeb Ur Rehman,2,4.5,1,4.5,,2,2024-12 2024-13 2024-14 2024-15 2024-16 iApts,Done
 iApts 2024-16,IAPTS-16055,Story,1,done,andreanygren,afnan khan,Khushboo Rao,1.5,3,,0.5,,2,2024-14 2024-15 2024-16 iApts,Done
@@ -39,8 +39,9 @@ iApts 2024-16,IAPTS-16318,Story,3,done,Curtis Jones,Muhammad Bilal,Haseeb Ur Reh
 iApts 2024-16,IAPTS-15108,Story,3,done,Gul Hadi,muhammad waseem,Haseeb Ur Rehman,4.3,0.3,,0.3,,,2024-16 iApts,Done
 iApts 2024-16,IAPTS-16382,Story,3,done,Gul Hadi,Muhammad Talha,Haseeb Ur Rehman,12.5,4,,0.5,,,2024-15 2024-16 iApts,Done
 iApts 2024-16,IAPTS-16436,Bug,3,done,Dalton Aker,ali.r,Khurram Shahzad Janjua,1.5,1,,1.5,,,2024-16 iApts,Done
-iApts 2024-16,IAPTS-16469,Story,2,not-done,Gul Hadi,Abdul Ahad,Iqra Haq,5,7,1,,,,2024-15 2024-16 2024-17 iApts,QA Ready
+iApts 2024-16,IAPTS-16469,Story,2,not-done,Gul Hadi,Abdul Ahad,Iqra Haq,5,10,2,,,,2024-15 2024-16 2024-17 iApts,QA Rejected
 iApts 2024-16,IAPTS-16652,Sub-task,,done,Gul Hadi,,,1,,,,,,,Resolved
+iApts 2024-16,IAPTS-16870,Defect,,done,Iqra Haq,ali.r,,,,,,,,,
 iApts 2024-16,IAPTS-16491,Bug,0.5,not-done,Maria Seenarraine,,,1,,,,,,2024-16 2024-17 iApts,In Progress
 iApts 2024-16,IAPTS-16505,Bug,1,done,Maria Seenarraine,Abdullah Adil,Khurram Shahzad Janjua,0.3,0.3,,0.3,,,2024-16 2024-17 iApts,On Production
 iApts 2024-16,IAPTS-16520,Story,1,not-done,Gul Hadi,Abdul Wahab,Khushboo Rao,0.5,5,,2.5,,2,2024-16 2024-17 iApts,On Production
@@ -56,24 +57,26 @@ iApts 2024-16,IAPTS-16579,Bug,1,not-done,Gul Hadi,Abdul Wahab,Haseeb Ur Rehman,6
 iApts 2024-16,IAPTS-16580,Interrupt,1,done,Gul Hadi,Abdul Wahab,Maria Seenarraine,2.5,3,,1.5,,3,,On Production
 iApts 2024-16,IAPTS-16207,Story,0.5,done,Curtis Jones,ali.r,Haseeb Ur Rehman,0.5,1,,1.5,,2,2024-16 iApts,On Production
 iApts 2024-16,IAPTS-16590,Story,,done,Bilal Sattar,Abdul Wahab,Haseeb Ur Rehman,0.3,0.3,,1.3,,1,2024-16 iApts,Done
-iApts 2024-16,IAPTS-16618,Bug,0.5,not-done,Gul Hadi,Ehsan Ullah,Iqra Haq,3.5,2.5,2,,,1,2024-16 2024-17 iApts,QA Ready
+iApts 2024-16,IAPTS-16618,Bug,0.5,not-done,Gul Hadi,Ehsan Ullah,Iqra Haq,3.5,5.5,3,,,1,2024-16 2024-17 iApts,QA Rejected
 iApts 2024-16,IAPTS-16619,Story,1,done,Gul Hadi,Ehsan Ullah,Iqra Haq,2.5,1,,1.5,,1,,Done
 iApts 2024-16,IAPTS-16620,Story,1,not-done,Gul Hadi,Ehsan Ullah,,2,,,,,,2024-16 2024-17 iApts,In Progress
 iApts 2024-16,IAPTS-16477,Bug,1,done,Mohammed A Syed,Maria,Khurram Shahzad Janjua,1.1,1.6,1,1.1,1,,2024-16 2024-17 2024-18 iApts,Done
 
 Parameters,Value
-devCycleTime,3.338
-qaCycleTime,1.484
-uatCycleTime,0.947
+devCycleTime,3.279
+qaCycleTime,1.457
+uatCycleTime,0.93
 totalStoryIssues,42
 totalBugsIssues,15
 carryOverNumber,11
-carryOverPercentage,17
+carryOverPercentage,16
 sprintCommitedPoints,108.5
 sprintCompletedPoints,96
 sprintnotCompletedPoints,12.5
 sprintnotCompletedPointsPercentage,12
 totalTestCases,71
+avgTestCasesPerPbi,1.06
+pbiWithTestCases,53.73134328358209
 
 Developers,Avg Time,QA_KB,UAT_KB
 Muhammad Harris Bin Fazal,4.75,1,0
@@ -89,7 +92,7 @@ Inam,3.8,1,0
 Muhammad Bilal,7.3,0,0
 muhammad waseem,4.3,0,0
 Muhammad Talha,7.9,0,0
-ali.r,1,0,0
+ali.r,0.667,0,0
 Rana Shahroz,4.5,0,0
 Hamza Shakil,0.95,0,0
 omer shahab,2,0,0
