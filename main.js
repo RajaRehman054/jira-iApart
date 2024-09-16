@@ -22,9 +22,11 @@ const mainFunc = async () => {
 		let bugs = 0;
 		let totalTestCases = 0;
 		let pbiWithoutTestCases = 0;
+		let obsolete = 0;
 
 		for (let index = 0; index < data.length; index++) {
 			if (data[index].lastState === 'Obsolete') {
+				obsolete += 1;
 				continue;
 			}
 			let dev = data[index]['Developer'];
@@ -87,14 +89,16 @@ const mainFunc = async () => {
 			}
 		}
 
+		let finalNum = data.length - obsolete;
+
 		averageTime.devCycleTime = parseFloat(
-			(averageTime.devCycleTime / (data.length - carry_over)).toFixed(3)
+			(averageTime.devCycleTime / (finalNum - carry_over)).toFixed(3)
 		);
 		averageTime.qaCycleTime = parseFloat(
-			(averageTime.qaCycleTime / (data.length - carry_over)).toFixed(3)
+			(averageTime.qaCycleTime / (finalNum - carry_over)).toFixed(3)
 		);
 		averageTime.uatCycleTime = parseFloat(
-			(averageTime.uatCycleTime / (data.length - carry_over)).toFixed(3)
+			(averageTime.uatCycleTime / (finalNum - carry_over)).toFixed(3)
 		);
 
 		let finalData = {
@@ -102,7 +106,7 @@ const mainFunc = async () => {
 			totalStoryIssues: storyPoints,
 			totalBugsIssues: bugs,
 			carryOverNumber: carry_over,
-			carryOverPercentage: Math.round((carry_over / data.length) * 100),
+			carryOverPercentage: Math.round((carry_over / finalNum) * 100),
 			sprintCommitedPoints: totalPoints,
 			sprintCompletedPoints: totalPoints - notCompletedPoints,
 			sprintnotCompletedPoints: notCompletedPoints,
@@ -111,10 +115,10 @@ const mainFunc = async () => {
 			),
 			totalTestCases,
 			avgTestCasesPerPbi: parseFloat(
-				(totalTestCases / data.length).toFixed(2)
+				(totalTestCases / finalNum).toFixed(2)
 			),
 			pbiWithTestCases:
-				((data.length - pbiWithoutTestCases) / data.length) * 100,
+				((finalNum - pbiWithoutTestCases) / finalNum) * 100,
 		};
 
 		let avgDevTimeByEachDev = averageTimeCal(developers, true);
