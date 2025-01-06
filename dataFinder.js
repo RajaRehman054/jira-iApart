@@ -1,6 +1,5 @@
 var {
 	fetchBoardId,
-	fetchProjects,
 	fetchExpiredSprints,
 	fetchIssuesFromSprint,
 	fetchIssueHistory,
@@ -8,66 +7,62 @@ var {
 
 const dataFinder = async () => {
 	try {
-		const projects = await fetchProjects();
+		// const projects = await fetchProjects();
+		let projectKey = 'IAPTS';
+		let boardName = 'NIT';
 		let finalData = [];
 		let notImp = ['Test Plan', 'Task', 'Test', 'Test Execution'];
 
-		for (const project of projects) {
-			const boardIds = await fetchBoardId(project.key);
+		const boardId = await fetchBoardId(projectKey, boardName);
+		const sprint = await fetchExpiredSprints(boardId);
 
-			if (boardIds) {
-				for (let index = 0; index < boardIds.length; index++) {
-					if (boardIds[index] === 16 && project.key === 'IAPTS') {
-						const sprint = await fetchExpiredSprints(
-							boardIds[index]
-						);
+		if (sprint) {
+			const issues = await fetchIssuesFromSprint(sprint.id);
 
-						if (sprint) {
-							const issues = await fetchIssuesFromSprint(
-								sprint.id
-							);
+			for (const issue of issues) {
+				if (!notImp.includes(issue.fields.issuetype.name)) {
+					const issueKey = issue.key;
+					const issueHistory = await fetchIssueHistory(issueKey);
+					const timeInProgress = await calculateTimeSpentInStatus(
+						issueHistory.reverse(),
+						sprint.name,
+						issueKey
+					);
 
-							for (const issue of issues) {
-								if (
-									!notImp.includes(
-										issue.fields.issuetype.name
-									)
-								) {
-									const issueKey = issue.key;
-									const issueHistory =
-										await fetchIssueHistory(issueKey);
-									const timeInProgress =
-										await calculateTimeSpentInStatus(
-											issueHistory.reverse(),
-											sprint.name,
-											issueKey
-										);
-
-									let object = {
-										project: project.name,
-										sprint: sprint.name,
-										issue: issueKey,
-										issue_type: issue.fields.issuetype.name,
-										reporter:
-											issue.fields.reporter.displayName,
-										issue_point: timeInProgress.point
-											? timeInProgress.point
-											: issue.fields.customfield_10024,
-									};
-									delete timeInProgress.point;
-									object = { ...object, ...timeInProgress };
-									finalData.push(object);
-								}
-							}
-						}
-					}
+					let object = {
+						project: projectKey,
+						sprint: sprint.name,
+						issue: issueKey,
+						issue_type: issue.fields.issuetype.name,
+						reporter: issue.fields.reporter.displayName,
+						issue_point: timeInProgress.point
+							? timeInProgress.point
+							: issue.fields.customfield_10024,
+					};
+					delete timeInProgress.point;
+					object = { ...object, ...timeInProgress };
+					finalData.push(object);
 				}
 			}
 		}
+
 		return finalData;
 	} catch (error) {
 		console.error('An error occurred:', error);
 	}
+};
+
+const stateMappings = {
+	QA: ['QA Ready'],
+};
+
+const getMappedState = (value, mappings) => {
+	for (const [key, states] of Object.entries(mappings)) {
+		if (states.includes(value)) {
+			return key;
+		}
+	}
+	return null;
 };
 
 // !Function to calculate the time spent in a particular status
@@ -105,16 +100,22 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 				mainData.sprintChanges = `${mainData.sprintChanges} ${item.toString}`;
 			}
 			if (item.field === 'status') {
-				// if (issueKey === 'IAPTS-13471') {
-				// 	console.log(entry.created, item);
-				// }
 				mainData.lastState = item.toString;
 				let obj = item;
-				if (item.toString === 'QA Ready') {
-					obj = { ...item, toString: 'QA' };
+				const mappedToString = getMappedState(
+					item.toString,
+					stateMappings
+				);
+				const mappedFromString = getMappedState(
+					item.fromString,
+					stateMappings
+				);
+
+				if (mappedToString) {
+					obj = { ...item, toString: mappedToString };
 				}
-				if (item.fromString === 'QA Ready') {
-					obj = { ...item, fromString: 'QA' };
+				if (mappedFromString) {
+					obj = { ...item, fromString: mappedFromString };
 				}
 				data.push({
 					dated: entry.created,
@@ -130,9 +131,6 @@ const calculateTimeSpentInStatus = async (issueHistory, key, issueKey) => {
 			if (item.field === 'Link') {
 				let toString = item.toString;
 				if (toString && toString.includes(' by ')) {
-					if (issueKey === 'IAPTS-16158') {
-						console.log(entry.created, item);
-					}
 					const parts = toString.split(' by ');
 					const before = parts[0].trim();
 					const after = parts[1] ? parts[1].trim() : '';

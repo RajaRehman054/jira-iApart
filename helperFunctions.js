@@ -14,18 +14,21 @@ const fetchProjects = async () => {
 };
 
 // !Function to fetch boards of projects
-const fetchBoardId = async projectKey => {
+const fetchBoardId = async (projectKey, boardName) => {
 	try {
 		const response = await axios.get(
 			`/rest/agile/1.0/board?projectKeyOrId=${projectKey}`
 		);
 		const data = await response.data;
-		let boardIds = [];
+		let boardId;
+
 		if (data.values.length > 0) {
 			data.values.forEach(element => {
-				boardIds.push(element.id);
+				if (element.name === boardName) {
+					boardId = element.id;
+				}
 			});
-			return boardIds;
+			return boardId;
 		} else {
 			return;
 		}
