@@ -1,0 +1,175 @@
+sprint,issue,issue_type,issue_point,status,reporter,Developer,QA Engineer,In Progress,QA,QA_KB,UAT,UAT_KB,testCases,sprintChanges,lastState,avgCycleTime
+iApts 2025-10,IAPTS-20719,Story,3,done,Gul Hadi,Rana Shahroz,Iqra Haq,5.3,0.3,,1.3,,,2025-10 iApts,Done,6.8999999999999995
+iApts 2025-10,IAPTS-20716,Story,3,done,Gul Hadi,Muhammad Talha,Iqra Haq,2.3,0.3,,0.3,,,2025-10 iApts,Done,2.8999999999999995
+iApts 2025-10,IAPTS-11654,Story,2,not-done,andreanygren,saud shahid,Haseeb Ur Rehman,4.3,1.3,2,0.3,,4, 2023-25 2023-26 2025-05 2025-09 2025-10 2025-11 iApts,UAT,
+iApts 2025-10,IAPTS-20856,Defect,,done,Haseeb Ur Rehman,saud shahid,Haseeb Ur Rehman,0.3,0.3,,0.3,,,,Done,0.8999999999999999
+iApts 2025-10,IAPTS-20857,Defect,,done,Haseeb Ur Rehman,saud shahid,Haseeb Ur Rehman,0.3,0.3,,0.3,,,,Done,0.8999999999999999
+iApts 2025-10,IAPTS-20931,Defect,,done,Haseeb Ur Rehman,saud shahid,Haseeb Ur Rehman,0.3,0.3,,0.3,,,,Done,0.8999999999999999
+iApts 2025-10,IAPTS-9158,Story,0.5,done,umer qureshi,Abdul Ahad,Haseeb Ur Rehman,2.5,4,,1.5,,2, 2023-06 2025-10 IAPTS iApts,Done,8
+iApts 2025-10,IAPTS-11217,Bug,2,done,Taimoor Ali,saud shahid,Hira Mukhtar,3.1,3.1,2,1.6,1,5, 2023-12 2024-25 2025-05 2025-07 2025-10 General IAPTS Lot Parking iApts,Done,7.800000000000001
+iApts 2025-10,IAPTS-20822,Defect,,done,Hira Mukhtar,saud shahid,Hira Mukhtar,1.3,0.3,,2.3,,,,Done,3.9
+iApts 2025-10,IAPTS-20909,Defect,,done,Hira Mukhtar,saud shahid,Hira Mukhtar,0.5,1,,0.5,,,,Done,2
+iApts 2025-10,IAPTS-20056,Story,3,not-done,Dalton Aker,,,1,,,,,,2025-09 2025-10 2025-11 iApts,In Progress,
+iApts 2025-10,IAPTS-20713,Story,3,done,Dalton Aker,Sohaib Qamar,Talha Babar,2.3,0.3,,0.3,,,2025-10 2025-11 iApts,Done,2.8999999999999995
+iApts 2025-10,IAPTS-20715,Story,5,not-done,Dalton Aker,Muhammad Bilal Azhar,Talha Babar,1,,,,,,2025-10 2025-11 iApts,In Progress,
+iApts 2025-10,IAPTS-20469,Story,3,done,Dalton Aker,Dalton Aker,Dalton Aker,15.3,0.3,,0.3,,,2025-09 2025-10 iApts,Done,15.900000000000002
+iApts 2025-10,IAPTS-20657,Bug,1,done,Dalton Aker,Dalton Aker,Talha Babar,2.5,2,,0.5,,1,,Done,5
+iApts 2025-10,IAPTS-19262,Bug,1,not-done,Iqra Haq,Sohaib Ameen,Iqra Haq,9,4,1,,,,2025-09 2025-10 2025-11 iApts,In Progress,
+iApts 2025-10,IAPTS-10987,Story,2,not-done,Taimoor Ali,Abdullah Adil,Iqra Haq,9.5,6.5,3,,,3, 2023-17 2023-18 2024-05 2025-02 2025-03 2025-04 2025-05 2025-06 2025-08 2025-09 2025-10 2025-11 IAPTS Lot Parking Tech iApts,QA Rejected,
+iApts 2025-10,IAPTS-20682,Defect,,done,Iqra Haq,,,,,,,,,,,
+iApts 2025-10,IAPTS-20683,Defect,,done,Iqra Haq,,,,,,,,,,,
+iApts 2025-10,IAPTS-20684,Defect,,done,Iqra Haq,,,,,,,,,,,
+iApts 2025-10,IAPTS-19252,Bug,1,done,Abdul Adil,Muhammad Ahmad,Abdul Adil,4.3,0.3,,2.3,,1,2025-10 iApts,Done,6.8999999999999995
+iApts 2025-10,IAPTS-19276,Bug,0.5,done,Abdul Adil,Muhammad Usman,Abdul Adil,0.5,1.5,,7,1,,2025-10 iApts,Done,9
+iApts 2025-10,IAPTS-20438,Story,1,done,Curtis Jones,afnan khan,Haseeb Ur Rehman,4.5,2,,1.5,,1,,Done,8
+iApts 2025-10,IAPTS-19287,Story,3,done,Gul Hadi,Ali Imran,Iqra Haq,7.3,0.3,,0.3,,,2025-05 2025-10 2025-12 iApts,Done,7.8999999999999995
+iApts 2025-10,IAPTS-19920,Story,0.5,done,Jason Pecoraro,Hasnain Malik,Hira Mukhtar,3.5,3,,0.5,,1,2025-10 2025-12 iApts,Done,7
+iApts 2025-10,IAPTS-19992,Story,0.5,done,Jason Pecoraro,Hasnain Malik,Hira Mukhtar,0.3,0.3,,0.3,,1, 2025-07 2025-08 2025-09 2025-10 2025-11 2025-12 2025-25 2025-26 iApts,Done,0.8999999999999999
+iApts 2025-10,IAPTS-19816,Story,0.5,done,Jason Pecoraro,Muhammad Ahmad,Hira Mukhtar,4.5,3,,0.5,,1, 2025-09 2025-10 2025-11 2025-12 2025-13 2025-26 iApts,Done,8
+iApts 2025-10,IAPTS-20291,Story,0.5,done,Jason Pecoraro,Muhammad Ahmad,Abdul Adil,3.5,3,,1.5,,1,2025-10 2025-12 2025-13 2025-23 iApts,Done,8
+iApts 2025-10,IAPTS-14498,Bug,0.5,done,Iqra Haq,saud shahid,Hira Mukhtar,1.8,4.8,3,1.3,,1, 2025-08 2025-09 2025-10 iApts,Released,7.8999999999999995
+iApts 2025-10,IAPTS-18348,Story,2,done,Gul Hadi,saud shahid,Hira Mukhtar,5,8.5,3,1.5,,6,2025-06 2025-07 2025-08 2025-09 2025-10 iApts,Done,15
+iApts 2025-10,IAPTS-20752,Defect,,done,Hira Mukhtar,saud shahid,Hira Mukhtar,0.5,3,,1.5,,,,Done,5
+iApts 2025-10,IAPTS-20818,Defect,,done,Hira Mukhtar,saud shahid,Hira Mukhtar,0.5,2,,1.5,,,,Done,4
+iApts 2025-10,IAPTS-20819,Defect,,done,Hira Mukhtar,saud shahid,Hira Mukhtar,0.5,2,,1.5,,,,Done,4
+iApts 2025-10,IAPTS-20820,Defect,,done,Hira Mukhtar,saud shahid,Hira Mukhtar,0.5,2,,1.5,,,,Done,4
+iApts 2025-10,IAPTS-20821,Defect,,done,Hira Mukhtar,saud shahid,Hira Mukhtar,0.5,2,,1.5,,,,Done,4
+iApts 2025-10,IAPTS-19898,Story,,done,Jason Pecoraro,,,,,,,,,2025-10 iApts,Duplicate,
+iApts 2025-10,IAPTS-19991,Story,2,done,Jason Pecoraro,Muhammad Talha,Hira Mukhtar,2.5,1,,2.5,,,2025-10 iApts,Done,6
+iApts 2025-10,IAPTS-20211,Story,2,done,Iqra Haq,Muhammad Usman,Iqra Haq,2.5,3,,0.5,,2,2025-10 iApts,Done,6
+iApts 2025-10,IAPTS-20223,Story,1,done,andreanygren,Sohaib Ameen,Iqra Haq,16.5,3,,2.5,,,2025-08 2025-09 2025-10 iApts,Done,22
+iApts 2025-10,IAPTS-19891,Story,0.5,done,Jason Pecoraro,Muhammad Usman,Abdul Adil,1.8,2.8,1,1.3,,1,2025-09 2025-10 2025-11 iApts,Released,5.8999999999999995
+iApts 2025-10,IAPTS-20701,Defect,,done,Abdul Adil,Muhammad Usman,Abdul Adil,1.3,0.3,,1.3,,,,Released,2.9000000000000004
+iApts 2025-10,IAPTS-20288,Story,3,not-done,Bilal Sattar,Muhammad Wassi Zafar,Iqra Haq,2,2,1,,,6,2025-10 2025-11 iApts,QA,
+iApts 2025-10,IAPTS-20290,Story,1,done,Bilal Sattar,Ali Akbar,Iqra Haq,0.3,0.3,,0.3,,,2025-10 iApts,Done,0.8999999999999999
+iApts 2025-10,IAPTS-20280,Story,2,done,Jason Pecoraro,afnan khan,Haseeb Ur Rehman,8.3,0.3,,10.3,,2,2025-09 2025-10 iApts,Done,18.900000000000002
+iApts 2025-10,IAPTS-20412,Story,3,not-done,Curtis Jones,Muhammad Wassi Zafar,Iqra Haq,1.3,0.3,,0.3,,,2025-10 2025-11 iApts,UAT,
+iApts 2025-10,IAPTS-19159,Bug,1,done,Gul Hadi,Abdul Ahad,Hira Mukhtar,1.5,4,,2.5,,1, 2025-04 2025-09 2025-10 iApts,Done,8
+iApts 2025-10,IAPTS-20382,Story,2,done,Gul Hadi,afnan khan,Haseeb Ur Rehman,1.5,6,,0.5,,4,2025-09 2025-10 iApts,Done,8
+iApts 2025-10,IAPTS-20441,Bug,1,done,Sentry,afnan khan,Haseeb Ur Rehman,1.5,1,,0.5,,1,,Done,3
+iApts 2025-10,IAPTS-20394,Story,3,done,Gul Hadi,Rana Shahroz,Iqra Haq,4.5,1,,2.5,,,2025-09 2025-10 iApts,Done,8
+iApts 2025-10,IAPTS-18432,Story,2,done,Gul Hadi,Muhammad Talha,Iqra Haq,3.5,1,,1.5,,,2025-09 2025-10 iApts,Done,6
+iApts 2025-10,IAPTS-20241,Story,3,done,Gul Hadi,Muhammad Talha Riaz,Muhammad Talha Riaz,5.3,0.3,,1.3,,,2025-08 2025-09 2025-10 iApts,Done,6.8999999999999995
+iApts 2025-10,IAPTS-20443,Story,3,done,Gul Hadi,Muhammad Talha Riaz,Muhammad Talha Riaz,1.3,0.3,,0.3,,,2025-10 iApts,Done,1.9000000000000001
+iApts 2025-10,IAPTS-20442,Story,,done,Gul Hadi,Ehsan Ullah,Haseeb Ur Rehman,4.5,5,,1.5,,1,2025-09 2025-10 iApts,Done,11
+iApts 2025-10,IAPTS-20378,Story,1,done,Gul Hadi,Abdullah Adil,Abdul Adil,3.3,5.3,2,2.3,,4,2025-09 2025-10 iApts,Pending Unleash,10.899999999999999
+iApts 2025-10,IAPTS-20689,Defect,,done,Abdul Adil,Abdullah Adil,Abdul Adil,2.3,0.3,,1.3,,,,Released,3.8999999999999995
+iApts 2025-10,IAPTS-20386,Story,1,not-done,Gul Hadi,Muhammad Usman,Iqra Haq,3.5,2.5,1,,,,2025-10 2025-11 iApts,In Progress,
+iApts 2025-10,IAPTS-20904,Defect,,done,Iqra Haq,Muhammad Usman,Haseeb Ur Rehman,0.5,0.5,1,,,,,QA Rejected,1
+iApts 2025-10,IAPTS-20905,Defect,,done,Iqra Haq,Muhammad Usman,,1,,,,,,,In Progress,1
+iApts 2025-10,IAPTS-20380,Story,2,done,Gul Hadi,Abdul Ahad,Abdul Adil,2.8,5.8,1,0.3,,4,2025-10 iApts,Done,8.9
+iApts 2025-10,IAPTS-20908,Defect,,done,Abdul Adil,Abdul Ahad,Abdul Adil,0.3,0.3,,0.3,,,,Done,0.8999999999999999
+iApts 2025-10,IAPTS-20718,Story,1,done,Dalton Aker,Dalton Aker,Talha Babar,2.5,1,,0.5,,,,Done,4
+iApts 2025-10,IAPTS-20236,Story,2,done,Dalton Aker,Muhammad Bilal Azhar,Talha Babar,0.3,0.3,,1.3,,,2025-09 2025-10 iApts,Done,1.9
+iApts 2025-10,IAPTS-20707,Story,5,done,Dalton Aker,umer qureshi,Talha Babar,7.3,0.3,,1.3,,1,,Done,8.9
+iApts 2025-10,IAPTS-20709,Story,2,done,Dalton Aker,umer qureshi,Talha Babar,2.3,0.3,,0.3,,,,Done,2.8999999999999995
+iApts 2025-10,IAPTS-20711,Story,1,done,Dalton Aker,umer qureshi,Talha Babar,6.5,1,,1.5,,,,Done,9
+iApts 2025-10,IAPTS-20486,Story,3,done,Dalton Aker,Muhammad Bilal Azhar,Talha Babar,7.5,1,,0.5,,,,Done,9
+iApts 2025-10,IAPTS-20705,Story,3,done,Dalton Aker,Sohaib Qamar,Talha Babar,5.5,1,,0.5,,,,Done,7
+iApts 2025-10,IAPTS-20518,Story,2,done,Dalton Aker,Sohaib Qamar,Talha Babar,4.5,1,,0.5,,,2025-09 2025-10 iApts,Done,6
+iApts 2025-10,IAPTS-20475,Story,3,done,Dalton Aker,Talha Babar,Talha Babar,4.3,0.3,,1.3,,,2025-10 iApts,Done,5.8999999999999995
+iApts 2025-10,IAPTS-20519,Story,5,done,Curtis Jones,Ali Akbar,Iqra Haq,4.3,0.3,,1.3,,,,Done,5.8999999999999995
+iApts 2025-10,IAPTS-20504,Story,1,done,Gul Hadi,Hasnain Malik,Iqra Haq,6.3,0.3,,1.3,,,2025-10 iApts,Done,7.8999999999999995
+iApts 2025-10,IAPTS-20505,Story,1,done,Gul Hadi,Hasnain Malik,Iqra Haq,0.3,0.3,,1.3,,,2025-10 iApts,Done,1.9
+iApts 2025-10,IAPTS-20506,Story,1,done,Gul Hadi,Hasnain Malik,Iqra Haq,0.3,0.3,,1.3,,,2025-10 iApts,Done,1.9
+iApts 2025-10,IAPTS-20507,Story,1,done,Gul Hadi,Abdullah Adil,Iqra Haq,3.3,0.3,,1.3,,,2025-10 iApts,Done,4.8999999999999995
+iApts 2025-10,IAPTS-20508,Story,3,done,Gul Hadi,Abdullah Adil,Iqra Haq,3.3,0.3,,1.3,,,2025-10 iApts,Done,4.8999999999999995
+iApts 2025-10,IAPTS-20376,Story,1,done,Gul Hadi,Rana Shahroz,Iqra Haq,0.3,0.3,,1.3,,, 2025-09 2025-10 2025-11 iApts,Done,1.9
+iApts 2025-10,IAPTS-20548,Story,1,done,Gul Hadi,afnan khan,Iqra Haq,4,4.5,1,1.5,,,2025-09 2025-10 iApts,Done,10
+iApts 2025-10,IAPTS-20547,Defect,,done,Abdul Adil,Ali Akbar,Abdul Adil,0.3,0.3,,1.3,,,,Released,1.9
+iApts 2025-10,IAPTS-20551,Defect,,done,Iqra Haq,afnan khan,Iqra Haq,0.5,3,,2.5,,,,Done,6
+iApts 2025-10,IAPTS-20552,Defect,,done,Iqra Haq,Ehsan Ullah,Iqra Haq,2.3,0.3,,1.3,,,,Done,3.8999999999999995
+iApts 2025-10,IAPTS-20553,Defect,,done,Iqra Haq,afnan khan,Iqra Haq,2.5,1,,1.5,,,,Done,5
+iApts 2025-10,IAPTS-20554,Defect,,done,Iqra Haq,Abdul Ahad,Iqra Haq,0.3,0.3,,1.3,,,,Done,1.9
+iApts 2025-10,IAPTS-20608,Defect,,done,Haseeb Ur Rehman,afnan khan,Haseeb Ur Rehman,0.8,0.8,1,0.3,,2,,Done,1.9000000000000001
+iApts 2025-10,IAPTS-20634,Defect,,done,Iqra Haq,afnan khan,Iqra Haq,2.5,3,1,0.5,,,,Done,6
+iApts 2025-10,IAPTS-20426,Bug,1,done,Gul Hadi,Sohaib Ameen,Abdul Adil,0.8,2.3,1,3.8,1,2,2025-09 2025-10 iApts,Released,6.8999999999999995
+iApts 2025-10,IAPTS-20681,Defect,,done,Abdul Adil,Muhammad Ahmad,Abdul Adil,0.3,0.3,,0.3,,,,Released,0.8999999999999999
+iApts 2025-10,IAPTS-20686,Defect,,done,Abdul Adil,Muhammad Ahmad,Abdul Adil,0.3,0.3,,0.3,,,,Released,0.8999999999999999
+iApts 2025-10,IAPTS-20734,Defect,,done,Abdul Adil,Muhammad Ahmad,Abdul Adil,1.3,0.3,,1.3,,,,Done,2.9000000000000004
+iApts 2025-10,IAPTS-20577,Story,3,done,Curtis Jones,Ali Imran,Iqra Haq,1.5,3,,2.5,,,,Done,7
+iApts 2025-10,IAPTS-20537,Bug,0.5,done,Hira Mukhtar,afnan khan,Abdul Adil,0.5,3,,0.5,,1,2025-10 iApts,Done,4
+iApts 2025-10,IAPTS-20590,Bug,1,done,Abdul Adil,Ehsan Ullah,Abdul Adil,1.8,2.8,1,1.3,,1,2025-10 iApts,Done,5.8999999999999995
+iApts 2025-10,IAPTS-20831,Defect,,done,Abdul Adil,Muhammad Usman,Abdul Adil,0.3,0.3,,1.3,,,,Done,1.9
+iApts 2025-10,IAPTS-20591,Bug,1,done,Hira Mukhtar,Ehsan Ullah,Hira Mukhtar,1.5,3,,0.5,,,2025-10 iApts,Done,5
+iApts 2025-10,IAPTS-20592,Bug,1,done,Hira Mukhtar,Abdul Ahad,Hira Mukhtar,1.5,4,,1.5,,1,2025-10 iApts,Done,7
+iApts 2025-10,IAPTS-20622,Story,2,not-done,Curtis Jones,Sohaib Ameen,Abdul Adil,9,1,1,,,6,2025-10 2025-11 iApts,QA Ready,
+iApts 2025-10,IAPTS-20870,Defect,,done,Abdul Adil,Sohaib Ameen,,0.5,1.5,,,,,,QA,2
+iApts 2025-10,IAPTS-20871,Defect,,done,Abdul Adil,Sohaib Ameen,,0.5,0.5,,,,,,QA Ready,1
+iApts 2025-10,IAPTS-20873,Defect,,done,Abdul Adil,Sohaib Ameen,,0.5,0.5,,,,,,QA Ready,1
+iApts 2025-10,IAPTS-20874,Defect,,done,Abdul Adil,Sohaib Ameen,,0.5,1.5,,,,,,QA,2
+iApts 2025-10,IAPTS-20655,Story,2,not-done,Jason Pecoraro,,,2,,,,,,2025-10 2025-11 iApts,In Progress,
+iApts 2025-10,IAPTS-20694,Bug,1,done,Haseeb Ur Rehman,afnan khan,Haseeb Ur Rehman,0.5,4,,0.5,,1,2025-10 iApts,Done,5
+iApts 2025-10,IAPTS-20696,Story,3,done,Gul Hadi,Ehsan Ullah,Abdul Adil,3.5,5,,0.5,,1,,Done,9
+iApts 2025-10,IAPTS-20720,Story,0.5,done,Gul Hadi,Rana Shahroz,Iqra Haq,1.5,1,,0.5,,,,Done,3
+iApts 2025-10,IAPTS-20721,Story,5,done,Gul Hadi,Hamza Shakil,Hamza Shakil,2.3,0.3,,0.3,,,,Done,2.8999999999999995
+iApts 2025-10,IAPTS-20722,Story,1,done,Gul Hadi,Muhammad Talha Riaz,Muhammad Talha Riaz,3.3,0.3,,2.3,,,,Done,5.8999999999999995
+iApts 2025-10,IAPTS-20723,Story,2,done,Gul Hadi,Hamza Shakil,Hamza Shakil,2.3,0.3,,3.3,,,,Done,5.8999999999999995
+iApts 2025-10,IAPTS-20724,Story,1,done,Gul Hadi,Ali Imran,Haseeb Ur Rehman,0.3,0.3,,5.3,,,,Done,5.8999999999999995
+iApts 2025-10,IAPTS-20759,Interrupt,1,done,Gul Hadi,Ehsan Ullah,Haseeb Ur Rehman,0.5,4,,0.5,,1,,Done,5
+iApts 2025-10,IAPTS-20800,Defect,,done,Abdul Adil,saud shahid,Abdul Adil,0.3,0.3,,0.3,,,2025-10 2025-11 iApts,Released,0.8999999999999999
+iApts 2025-10,IAPTS-20815,Defect,,done,Abdul Adil,Hasnain Malik,Abdul Adil,0.3,0.3,,0.3,,,,Released,0.8999999999999999
+iApts 2025-10,IAPTS-20794,Interrupt,1,done,Gul Hadi,Sohaib Ameen,Abdul Adil,3.5,2,,0.5,,3,,Done,6
+
+Parameters,Value
+devCycleTime,2.404
+qaCycleTime,1.528
+uatCycleTime,1.206
+avgCycleTime,5.138
+averageTime__Dev_12,3.488
+averageTime__QA_12,1.868
+averageTime__UAT_12,1.868
+averageTime__Dev_3,4.943
+averageTime__QA_3,0.979
+averageTime__UAT_3,0.943
+averageTime__Dev_5,4.633
+averageTime__QA_5,0.3
+averageTime__UAT_5,0.967
+averageTime__Dev_5+,0
+averageTime__QA_5+,0
+averageTime__UAT_5+,0
+totalStoryIssues,60
+totalStoryIssuesNotCompleted,9
+totalBugsIssues,14
+carryOverNumber,10
+carryOverPercentage,9
+sprintCommitedPoints,135
+sprintCompletedPoints,111
+sprintnotCompletedPoints,24
+sprintnotCompletedPointsPercentage,18
+totalTestCases,74
+avgTestCasesPerPbi,0.67
+pbiWithTestCases,30.630630630630627
+
+Developers,Avg Time,QA_KB,UAT_KB
+Rana Shahroz,2.9,0,0
+Muhammad Talha,2.767,0,0
+saud shahid,1.1,8,1
+Abdul Ahad,1.483,1,0
+Sohaib Qamar,4.1,0,0
+Muhammad Bilal Azhar,3.9,0,0
+Dalton Aker,6.767,0,0
+Sohaib Ameen,3.257,1,1
+Abdullah Adil,3.05,2,0
+Muhammad Ahmad,2.367,0,0
+Muhammad Usman,1.129,2,1
+afnan khan,2.464,3,0
+Ali Imran,3.033,0,0
+Hasnain Malik,1.833,0,0
+Muhammad Wassi Zafar,0,0,0
+Ali Akbar,1.633,0,0
+Muhammad Talha Riaz,3.3,0,0
+Ehsan Ullah,2.35,1,0
+umer qureshi,5.367,0,0
+Talha Babar,4.3,0,0
+Hamza Shakil,2.3,0,0
+
+Qa Engineer,Avg Time,QA_KB
+Iqra Haq,1.191,2
+Haseeb Ur Rehman,2.057,2
+Hira Mukhtar,2.765,8
+Talha Babar,0.773,0
+Dalton Aker,0.3,0
+Abdul Adil,1.752,6
+Muhammad Talha Riaz,0.3,0
+Hamza Shakil,0.3,0

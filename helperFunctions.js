@@ -66,7 +66,7 @@ const fetchExpiredSprints = async boardId => {
 		}
 
 		if (allSprints.length > 0) {
-			latestExpiredSprint = allSprints.reverse()[0];
+			latestExpiredSprint = allSprints.reverse()[3];
 		}
 
 		return latestExpiredSprint;
@@ -151,6 +151,7 @@ const createCSV = async (data, mainDetails, developers, qa) => {
 			'testCases',
 			'sprintChanges',
 			'lastState',
+			'avgCycleTime',
 		];
 
 		sheet.addRow(desiredHeaderOrder);
@@ -195,7 +196,7 @@ const createCSV = async (data, mainDetails, developers, qa) => {
 			sheet.addRow([key, qa[key].avgTime, qa[key].qaKB]);
 		});
 
-		await workbook.csv.writeFile(`output/${project}.csv`);
+		await workbook.csv.writeFile(`output/${data[0].sprint}.csv`);
 		console.log('\nCSV file created successfully.\n');
 	} catch (error) {
 		console.error('Error occurred while creating CSV file:', error);
